@@ -1,0 +1,16 @@
+# Compilação
+build/
+*.hex
+*.bin
+*.elf
+
+# Editores
+.vscode/
+.idea/
+
+# Arquivo de trava do LibreOffice
+.~lock.*#
+
+# Python
+__pycache__/
+*.pyc
