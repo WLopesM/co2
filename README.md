@@ -13,6 +13,17 @@ Medição e controle de CO₂ dissolvido em aquário de água doce plantado (100
 
 Cada projeto é independente: tem hardware, firmware e relatórios de fase próprios, em `<projeto>/docs/`.
 
+## Relatórios em PDF
+
+Os relatórios são escritos em Markdown. Para gerar os PDFs (gravados ao lado de cada `.md`):
+
+```bash
+./gerar_pdf.py                                          # todos os relatórios
+./gerar_pdf.py projeto_drop_checker/docs/fase-01-bancada.md   # só um
+```
+
+O script precisa do Google Chrome (ou Chromium) e do pacote Python `markdown-it-py`. Os PDFs não vão para o git: o `.md` é a fonte.
+
 ## Status
 
 | Projeto | Fase atual |
